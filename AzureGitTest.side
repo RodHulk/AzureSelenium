@@ -1,0 +1,90 @@
+{
+  "id": "b275896c-c9e8-4ae9-b104-83be105c9fa6",
+  "version": "2.0",
+  "name": "AzureGitTest",
+  "url": "https://www.bing.com",
+  "tests": [{
+    "id": "422e56a1-fcf2-4e4e-aadd-5fb3388c9e70",
+    "name": "OpenAzureRepoInst",
+    "commands": [{
+      "id": "64f59c97-cfd4-47a5-a953-970b05759294",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "637a466b-0ae4-4409-b4bd-e8ee08ffe232",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1494x1012",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a42a9df-7fca-4806-b622-c9fe7f5c9f2f",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,100)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44575c7a-bf3b-4fbe-abca-3a1d7f6fbb29",
+      "comment": "",
+      "command": "type",
+      "target": "id=sb_form_q",
+      "targets": [
+        ["id=sb_form_q", "id"],
+        ["name=q", "name"],
+        ["css=#sb_form_q", "css:finder"],
+        ["xpath=//textarea[@id='sb_form_q']", "xpath:attributes"],
+        ["xpath=//div[@id='sb_form_c']/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "azure devops git re"
+    }, {
+      "id": "2a8784f8-010d-41c1-8047-bab0e5760387",
+      "comment": "",
+      "command": "click",
+      "target": "css=#sa_5005 strong",
+      "targets": [
+        ["css=#sa_5005 strong", "css:finder"],
+        ["xpath=//li[@id='sa_5005']/div[2]/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'pository')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c891a88d-1d92-4463-ba92-42e0721497f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.rainfo:nth-child(1) span",
+      "targets": [
+        ["css=.rainfo:nth-child(1) span", "css:finder"],
+        ["xpath=//div[@id='slideexp0_65EEC9']/div/div/a/div/div/span", "xpath:idRelative"],
+        ["xpath=//a/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Create a new Git repo in your project - Azure Rep…')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9943",
+      "windowTimeout": 2000
+    }, {
+      "id": "2d4ceb08-d696-417a-942b-834b34995517",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9943}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "af8b9c78-ee6d-48e8-8e94-9f56321a3d7c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["422e56a1-fcf2-4e4e-aadd-5fb3388c9e70"]
+  }],
+  "urls": ["https://www.bing.com/"],
+  "plugins": []
+}
